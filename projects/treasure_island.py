@@ -2,11 +2,14 @@ import os
 
 os.system('cls')
 
+# treasure-island-start // ilha do tesouro-começo
+
 """"Instruções
+
 Faça seu próprio jogo "Escolha sua própria aventura". 
+
 Use condicionais como if, else, e elifdeclarações para estabelecer a lógica e o caminho da história em seu programa. 
 """
-
 
 # Coding // codificação
 print('''
@@ -46,9 +49,10 @@ else:
     if opc != 'esperar':
         os.system('cls')
         print('\nVocê tá sendo atacado(a) pelo Ex-empresário do Luva de Pedreiro. Fim de jogo.\n')
+
     else:
         os.system('cls')
-        opc = str(input('\nVocê chega ileso à ilha. Há uma casa com 3 portas. Uma vermelha, uma amarela e uma azul. Qual cor você escolhe? \n>> '))
+        opc = str(input('\nVocê chega ileso à ilha. Há uma casa com 3 portas. Uma vermelha, uma amarela e uma azul. Qual cor você escolhe? \n>> ')).lower()
         os.system('cls')
         if opc == 'vermelha':
             print("""                /^._
@@ -80,3 +84,12 @@ else:
 """)
             print('\nParabéns! Você venceu o jogo.  \o/\n')
             print('\nNa história, nosso luvinha sempre sairá vencedor, você também por chegar até aqui. ^=^\n')
+
+        else:
+            os.system('cls')
+            print(""" _._     _,-'""`-._
+(,-.`._,'(       |\`-/|
+    `-.-' \ )-`( , o o)
+          `-    \`_`"'-
+            """)
+            print('\nAh nãoo, você está sendo atacado(a) por um gatinho raivoso... Tente novamente!\n')
