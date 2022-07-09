@@ -28,7 +28,7 @@ os.system('cls')
 """
 
 # Coding // codificação
-humano = int(input( "O que você escolhe? Digite 0 para Pedra, 1 para Papel ou 2 para Tesoura. "))
+humano = int(input( "O que você escolhe? Digite 0 para Pedra, 1 para Papel ou 2 para Tesoura.\n"))
 
 rock = '''
     _______
@@ -84,7 +84,7 @@ elif (pc == scissors) and (humano == 1): # PC -> Tesoura / HUMANO -> Papel
 elif (humano == 2) and (pc == paper): # HUMANO = Tesoura / PC = Papel
     print(f'{pc} >> Pc Jogou Papel\n\n{seqs[humano]} >> Humano Jogou Tesoura')
     print('\n>> Parabéns humano! Você venceu o jogo \o/\n')
-elif (humano > 2):
+elif (humano < 0) or (humano > 2):
     print('\n>> Ops! Jogada inválida amiguinho(a), tente mais uma vez :D\n')
 else:
     jogada_iguais = ''
