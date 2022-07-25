@@ -1,6 +1,6 @@
 from os import system as clear
 from random import *
-from ancii_art.guess_the_number import logo
+from ancii_art.logo_guess_the_number import logo
 clear('cls')
 
 
