@@ -1,7 +1,11 @@
 from os import system as clear
 from random import *
-from ancii_art.logo_guess_the_number import logo
+from logo_guess_the_number import logo
 clear('cls')
+
+"""Number Guessing Game // Jogo de adivinhação de números """
+
+
 
 
 def calculate(you_resp, computer_number):

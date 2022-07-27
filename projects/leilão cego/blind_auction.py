@@ -1,5 +1,5 @@
 from os import system
-from ancii_art.logo_martelo import logo
+from logo_martelo import logo
 
 system('cls')
 

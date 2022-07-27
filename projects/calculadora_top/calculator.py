@@ -1,4 +1,4 @@
-from ancii_art.logo_calculator import logo
+from logo_calculator import logo
 from os import system
 
 
